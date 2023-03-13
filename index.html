@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocar uma lâmpada - Passo a Passo</title>
+</head>
+<body>
+
+    <h1>Trocar uma lâmpada - Passo a Passo</h1>
+	<ol id="passos">
+		<li>Verifique o tipo de lâmpada que precisa ser substituída. Certifique-se de que a nova lâmpada que você comprou seja do mesmo tipo e potência da lâmpada que precisa ser substituída.</li>
+		<li>Desligue o interruptor de luz que controla a lâmpada que você vai trocar.</li>
+		<li>Espere alguns minutos para a lâmpada esfriar completamente, se ela estiver acesa recentemente.</li>
+		<li>Certifique-se que esteja calçado corretamente com uma sandalia de borracha.</li>
+		<li>Pegue uma escada ou um banquinho para que você possa alcançar a lâmpada.</li>
+		<li>Posicione-se de forma segura e estável em frente à lâmpada. Certifique-se de que a escada ou banquinho esteja bem apoiado no chão e que você tenha um bom equilíbrio.</li>
+		<li>Com cuidado, segure a base da lâmpada antiga e torça-a no sentido anti-horário para soltá-la do soquete.</li>
+		<li>Remova a lâmpada antiga do soquete e coloque-a em um lugar seguro.</li>
+		<li>Pegue a nova lâmpada e, segurando a base, encaixe-a no soquete. Certifique-se de que a lâmpada esteja alinhada corretamente.</li>
+		<li>Gire a nova lâmpada no sentido horário para prendê-la no soquete. Não force muito para não quebrar a lâmpada.</li>
+		<li>Ligue o interruptor de luz para testar a nova lâmpada.</li>
+		<li>Se a nova lâmpada acender corretamente, desça da escada ou banquinho e guarde-o. Se a nova lâmpada não acender, tente girá-la novamente para garantir que ela esteja firmemente presa no soquete ou tente trocá-la por uma nova.</li>
+	</ol>
+	
+	<button id="proxPasso" onclick="proxPasso()">Próximo Passo</button>
+
+	<script>
+		var passos = document.querySelectorAll("#passos li");
+		var passoAtual = 0;
+
+		function proxPasso() {
+			if (passoAtual < passos.length - 1) {
+				passos[passoAtual].classList.remove("ativo");
+				passoAtual++;
+				passos[passoAtual].classList.add("ativo");
+			}
+		}
+
+		passos[0].classList.add("ativo");
+	</script>
+
+	<style>
+		.ativo {
+			font-weight: bold;
+		}
+	</style>
+    
+</body>
+</html>
+
+
