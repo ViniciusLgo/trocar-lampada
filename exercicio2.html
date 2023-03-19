@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Trocar a roda do carro - Passo a Passo</title>
+</head>
+<body>
+
+
+    <h1>Trocar a roda do carro - Passo a Passo</h1>
+	
+		<h2>Grupo:
+
+			- Denilson Melo
+			- João Marcos 
+			- William Santos 
+			- Vinicius Lago
+		</h2>
+	<ol id="passos" style= "font-family:'Times New Roman', Times, serif; font-size:28px">
+        
+
+        
+ <li> Segue abaixo um passo a passo para a troca da roda do seu Renault Logan 2012, levando em consideração as premissas mencionadas:</li>
+
+ <li> Verifique se o carro está estacionado em um local seguro, com espaço suficiente para trabalhar e com o freio de mão acionado. Certifique-se também de que o carro está em uma superfície plana e estável.</li>
+
+ <li> Retire o estepe (step) do porta-malas e coloque-o próximo ao pneu que precisa ser trocado.</li>
+
+ <li> Utilize a chave de roda e a chave de fenda para retirar a tampa que protege as porcas da roda e afrouxar levemente as porcas do pneu que precisa ser trocado. É importante afrouxar as porcas antes de levantar o carro do chão, pois quando o carro estiver suspenso, a roda pode girar e tornar difícil soltar as porcas.</li>
+
+ <li> Utilize o macaco fornecido com o carro para levantar o carro do chão. Posicione o macaco em um ponto seguro e resistente do veículo, geralmente indicado no manual do proprietário, próximo ao pneu que precisa ser trocado. Certifique-se de que o macaco está apoiado em uma superfície plana e estável antes de levantar o carro.</li>
+
+ <li> Levante o carro até que a roda que precisa ser trocada esteja completamente suspensa do chão. Não é necessário levantar o carro muito alto, apenas o suficiente para que a roda possa ser removida com facilidade.</li>
+
+ <li> Utilize a chave de roda para remover as porcas completamente. Retire a roda velha e coloque-a de lado.</li>
+
+ <li> Coloque a roda de reposição no lugar da roda velha, alinhando os furos da roda com os parafusos do cubo.</li>
+
+ <li> Coloque as porcas de volta no lugar e aperte-as com a chave de roda o máximo que puder. Não é necessário aplicar muita força neste momento, apenas certifique-se de que as porcas estejam firmes e bem fixadas.</li>
+
+ <li> Baixe o carro com cuidado, utilizando o macaco, até que a roda de reposição esteja em contato com o chão. Em seguida, aperte as porcas novamente com a chave de roda, utilizando o torque especificado no manual do proprietário. Geralmente, o torque recomendado para as porcas do Renault Logan 2012 é de 108 Nm (10,8 kgf.m).</li>
+
+ <li> Verifique se todas as porcas estão bem apertadas e se a roda está firmemente fixada. Em seguida, recoloque a tampa que protege as porcas da roda.</li>
+
+ <li> Guarde a roda velha no porta-malas e leve-a para um local de descarte correto, como um centro de reciclagem de pneus.</li>
+
+ <li> Antes de sair dirigindo, verifique se o pneu trocado está calibrado com a pressão correta de 32 p.s.i para evitar problemas futuros. Verifique também se a direção está normal e se o carro está funcionando corretamente.</li>
+
+ <li> Lembre-se de consultar o manual da seguradora para se certificar de que todas as etapas foram realizadas corretamente.</li>
+
+   
+	</ol>
+	
+
+	<button id="proxPasso" onclick="proxPasso()">Próximo Passo</button>
+
+	<script>
+		var passos = document.querySelectorAll("#passos li");
+		var passoAtual = 0;
+
+		function proxPasso() {
+			if (passoAtual < passos.length - 1) {
+				passos[passoAtual].classList.remove("ativo");
+				passoAtual++;
+				passos[passoAtual].classList.add("ativo");
+			}
+		}
+
+		passos[0].classList.add("ativo");
+	</script>
+
+	<style>
+		.ativo {
+			font-weight: bold;
+		}
+	</style>
+    
+<br>
+<br>
+    <a href="index.html">Voltar exercicio 1 - pag inicial</a>		
+
+</body>
+</html>
+
